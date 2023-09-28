@@ -1,0 +1,87 @@
+
+
+@media (min-width: 576px) {
+	html {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 768px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 992px) {
+	html {
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 1200px) {
+	html {
+		font-size: 20px;
+	}
+}
+
+.general
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr ;
+	grid-template-areas: "personnel profesionnel profesionnel";
+	width: 1200px;
+	margin: 100px auto;	
+	
+
+}
+
+.personnel
+{
+	grid-area: personnel ;
+	padding: 50px;
+	background-color: darkcyan;
+	color: whitesmoke;
+	border: 1px solid darkcyan;
+	border-radius: 25px 0px 25px 25px;
+}
+
+.profesionnel 
+{
+	grid-area: profesionnel ;
+	display: grid;
+	grid-template-rows: 250px 1fr;
+	grid-template-areas: "entete" "contenu";
+}
+
+.entete
+{
+	grid-area: entete;
+	padding: 50px;
+	background-color: darkcyan;
+	color: whitesmoke;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	border-radius: 0px 25px 25px 0px;
+    font-size: 35px;
+}
+.contenu
+{
+	grid-area: contenu;
+	padding: 50px;
+}
+
+.portrait
+{
+  border-radius: 50%;
+  max-width: 250px;
+  margin: auto;
+  display: block;
+  margin-bottom: 50px;
+}
+
+.personnel a {
+	color: black;
+    margin: auto;
+}

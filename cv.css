@@ -85,3 +85,17 @@
 	color: black;
     margin: auto;
 }
+
+.contenu h2 
+{
+    border: 5px solid darkcyan;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.personnel h2
+{
+    border: 5px solid whitesmoke;
+    border-radius: 50px;
+    text-align: center;
+}
